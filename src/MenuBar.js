@@ -77,37 +77,24 @@ export default function MenuBar(props) {
   return (
     <div className={classes.root}>
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar position="sticky">
           <Toolbar>
             <Typogarphy variant="h5" className={classes.title}>
               Nakaue's Portfolio
             </Typogarphy>
-            <Tabs value={value} onChange={handleChange} aria-label="tabs">
-              <Tab label="About" {...allayProps(0)} />
-              <Tab label="Work"  {...allayProps(1)} />
-            </Tabs>
           </Toolbar>
+          <Tabs value={value} onChange={handleChange} aria-label="tabs">
+            <Tab label="About" {...allayProps(0)} />
+            <Tab label="Work"  {...allayProps(1)} />
+          </Tabs>      
         </AppBar>
       </ElevationScroll>
+      
       <TabPanel value={value} index={0}>
-        <Container>
-          <Box my={2}>
-            {[...new Array(1000)].map(() => 
-              `About`,
-              ).join('\n')
-            }
-          </Box>
-        </Container>
+        About
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Container>
-          <Box my={2}>
-            {[...new Array(1000)].map(() => 
-              `Work`,
-              ).join('\n')
-            }
-          </Box>
-        </Container>
+        Work
       </TabPanel>
     </div>
   );
