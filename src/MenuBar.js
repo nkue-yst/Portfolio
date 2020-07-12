@@ -3,19 +3,24 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typogarphy from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import About from './About';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   title: {
+    fontFamily: 'Roboto Slab',
+    fontSize: 30,
     flexGrow: 1,
+  },
+  tab: {
+    fontFamily: 'Roboto Slab',
   },
 }));
 
@@ -80,18 +85,18 @@ export default function MenuBar(props) {
         <AppBar position="sticky">
           <Toolbar>
             <Typogarphy variant="h5" className={classes.title}>
-              Nakaue's Portfolio
+              Y.Nakaue's Portfolio
             </Typogarphy>
           </Toolbar>
           <Tabs value={value} onChange={handleChange} aria-label="tabs">
-            <Tab label="About" {...allayProps(0)} />
-            <Tab label="Work"  {...allayProps(1)} />
+            <Tab label="About" {...allayProps(0)} className={classes.tab} />
+            <Tab label="Work"  {...allayProps(1)} className={classes.tab} />
           </Tabs>      
         </AppBar>
       </ElevationScroll>
       
       <TabPanel value={value} index={0}>
-        About
+        <About />
       </TabPanel>
       <TabPanel value={value} index={1}>
         Work
