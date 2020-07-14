@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontFamily: 'Roboto Slab',
     fontSize: 30,
-    flexGrow: 1,
   },
   tab: {
     fontFamily: 'Roboto Slab',

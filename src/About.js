@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    textAlign: "center",
+  },
   title: {
     fontFamily: 'Noto Sans JP',
     fontWeight: 700,
@@ -10,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   context: {
     fontFamily: 'Noto Sans JP',
     fontWeight: 300,
-    marginBottom: 20,
+    marginBottom: 30,
   }
 }));
 
@@ -18,7 +21,9 @@ export default function About() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
+      <Typography variant="h3" className={classes.title} style={{ marginBottom: 40 }}>~About~</Typography>
+
       <Typography variant="h5" className={classes.title}>Name</Typography>
       <Typography className={classes.context}>Yoshito Nakaue</Typography>
 
