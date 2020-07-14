@@ -30,7 +30,7 @@ export default function About() {
 
       <Typography variant="h5" className={classes.title}>自己紹介</Typography>
       <Typography className={classes.context}>
-        22卒エンジニア志望。<br/>
+        22卒ゲーム業界エンジニア志望。<br/>
         中学生の頃から趣味としてプログラミングを学び始め、
         現在はC++/UE4を用いたゲーム開発を中心に
         フロントエンドからサーバーサイドまで幅広く興味を持って勉強・開発に取り組んでいます。<br/>

@@ -9,6 +9,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typogarphy from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import About from './About';
+import Work from './Work';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -99,7 +100,7 @@ export default function MenuBar(props) {
         <About />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Work
+        <Work />
       </TabPanel>
     </div>
   );
