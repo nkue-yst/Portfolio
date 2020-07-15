@@ -8,9 +8,6 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import img1 from './image/treasurerun_title.jpg'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    textAlign: "center",
-  },
   img: {
     borderRadius: 10,
     maxWidth: 600,
@@ -33,7 +30,7 @@ export default function Work() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div>
       <Typography variant="h3" className={classes.title} style={{ marginBottom: 40 }}>~Works~</Typography>
 
       <img src={img1} width="50%" className={classes.img} />
