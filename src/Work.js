@@ -91,7 +91,7 @@ export default function Work() {
       <Typography variant="h5" className={classes.title}>ポートフォリオ</Typography>
       <Typography className={classes.period}>制作時間：5時間</Typography>
       <Typography className={classes.context}>
-        JavaScropt（React, Material-UI）を使用したポートフォリオサイト。<br />
+        JavaScript（React, Material-UI）を使用したポートフォリオサイト。<br />
         UIライブラリにMaterial-UIを使用しています。github-pagesを用いて公開しています。
       </Typography>
 
